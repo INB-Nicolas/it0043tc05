@@ -1,0 +1,186 @@
+body {
+    background-image: url(alola1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    margin: 0;
+    padding: 20px;
+    height: 150vh;
+    box-sizing: border-box;
+  }
+  
+  .title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5em;
+    color: #ffffff;
+    text-shadow: 4px 4px 4px #000000;
+  }
+  
+  .subheading {
+    text-align: center;
+    margin: 10px 0 20px;
+    font-size: 1.5em;
+    color: #ffffff;
+    text-shadow: 3px 3px 3px #000000;
+  }
+  
+  .name {
+    margin: 0 0 10px;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000000;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    gap: 20px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+  
+  .card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: black solid 1px;
+  }
+  
+  .card-img {
+    background-image: url(pokeball3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .card-img img {
+    background-size: cover;
+    padding: 20px;
+    width: 150px;
+    height: 130px;
+  }
+  
+  .card-details {
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+  }
+  
+  .card-details.incineroar {
+    background-color: #e34234;
+  }
+  
+  .card-details.bewear {
+    background-color: #ffc0cb;
+  }
+  
+  .card-details.mimikyu {
+    background-color: #fcd667;
+  }
+  
+  .card-details.tsareena {
+    background-color: #98fb98;
+  }
+  
+  .card-details.wishiwashi {
+    background-color: #87ceeb;
+  }
+  
+  .card-details.alolanraichu {
+    background-color: #ffa07a;
+  }
+  
+  .type {
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline;
+  }
+  
+  .type-label {
+    display: inline;
+    padding: 2px 6px;
+    border-radius: 10px;
+    border: #000000 solid 2px;
+  }
+  
+  .type-label.fire {
+    background-color: #f08030;
+  }
+  
+  .type-label.dark {
+    background-color: #705848;
+  }
+  
+  .type-label.normal {
+    background-color: #a8a878;
+  }
+  
+  .type-label.fighting {
+    background-color: #c03028;
+  }
+  
+  .type-label.ghost {
+    background-color: #705898;
+  }
+  
+  .type-label.fairy {
+    background-color: #ee99ac;
+  }
+  
+  .type-label.grass {
+    background-color: #78c850;
+  }
+  
+  .type-label.water {
+    background-color: #6890f0;
+  }
+  
+  .type-label.psychic {
+    background-color: #f85888;
+  }
+  
+  .type-label.electric {
+    background-color: #f8d030;
+  }
+  
+  .description {
+    padding: 10px;
+  }
+  
+  .buttons {
+    padding: 0 0 20px 0;
+  }
+  
+  .buttons .hello {
+    background-color: lightgreen;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 5px 10px;
+  }
+  
+  .buttons .hello:hover {
+    opacity: 0.5;
+  }
+  
+  .buttons .move {
+    background-color: red;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+  
+  .buttons .move:hover {
+    opacity: 0.5;
+  }
