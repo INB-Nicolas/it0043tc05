@@ -160,6 +160,7 @@
   }
   .pokemon .name {
     order: 1;
+    font-size: 8vw;
   }
   .pokemon:hover {
     background-image: url("surfing.jpg") !important;
