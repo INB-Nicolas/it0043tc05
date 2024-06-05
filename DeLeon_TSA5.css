@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    width: 85vw;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+}
+
+.item{
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.name{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    text-shadow: black 2px 2px;
+}
+
+.types{
+    display: flex;
+    justify-content: center;
+}
+.type{
+    font-size: 1.2rem;
+    text-align: center;
+    text-shadow: black 1px 1px;
+    display: flex;
+    flex-wrap: nowrap;
+    display: inline;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 3px;
+    margin-right: 5px;
+}
+
+.details{
+    text-align: center;
+}
+
+.description{
+    font-size: 0.90em;
+    line-height: 1.5;
+    text-align: justify;
+    text-shadow: 1px 1px 2px black;
+    margin-top: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#dragonite .details, #salamence .details {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.name-and-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#tyranitar .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#metagross .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#garchomp .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 128px;
+    height: 128px;
+    object-fit: contain;
+    transition: all 0.4s ease;
+}
+
+img:hover{
+    transform: scale(1.2);
+}
+
+.details img {
+    margin-right: 10px;
+}
+
+#dragonite{
+    background-color: #e78739;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+#tyranitar{
+    background-color: #6c925e;
+}
+
+#metagross{
+    background-color: #426da6;
+}
+
+#salamence{
+    background-color: #bd526b;
+    grid-column: 2/4;
+}
+
+#garchomp{
+    background-color: #5a63ad;
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+#dragontype{
+    background-color: #6F35FC;
+}
+
+#flyingtype{
+    background-color: #A98FF3;
+}
+
+#darktype{
+    background-color: #705746;
+}
+
+#steeltype{
+    background-color: #B7B7CE;
+}
+
+#groundtype{
+    background-color: #E2BF65;
+}
+
+#psychictype{
+    background-color: #F95587;
+}
+
+#rocktype{
+    background-color: #B6A136;
+}
+
+@media (max-width: 1100px){
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #dragonite{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #dragonite .details, #salamence .details{
+        flex-direction: column;
+    }
+
+    #tyranitar {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #metagross {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #salamence {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    #garchomp {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    #garchomp .details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 600px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    #dragonite {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #tyranitar {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #metagross {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #salamence {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    #garchomp {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    #dragonite .details, #tyranitar .details, #metagross .details, #salamence .details{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
